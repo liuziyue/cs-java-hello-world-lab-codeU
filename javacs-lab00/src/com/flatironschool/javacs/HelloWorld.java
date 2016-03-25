@@ -3,7 +3,7 @@ package com.flatironschool.javacs;
 public class HelloWorld {
     public static Double getVersion() {
         // I won't work!
-        return Double.parseDouble(System.getProperty("java.specification.version"));
+        return Double.parseDouble(System.getProperty("java.version").substring(0, 3));
     }
 
     public static void main(String[] args) {
